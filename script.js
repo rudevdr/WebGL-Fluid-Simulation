@@ -1547,7 +1547,7 @@ function updatePointerMoveData (pointer, posX, posY) {
 }
 
 function updatePointerUpData (pointer) {
-    pointer.down = false;
+    pointer.down = true;
 }
 
 function correctDeltaX (delta) {
@@ -1644,3 +1644,5 @@ function hashCode (s) {
     }
     return hash;
 };
+
+document.querySelector('.close-button').click()
